@@ -1,0 +1,11 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - 'db/**/*'
+
+Metrics/MethodLength:
+  Max: 12
+
+PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%w': ()

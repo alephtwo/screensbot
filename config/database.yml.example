@@ -1,0 +1,18 @@
+---
+default: &default
+  adapter: postgresql
+  host: localhost
+  encoding: utf8
+  pool: 5
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  database: screensbot_dev
+
+production:
+  <<: *default
+  database: screensbot_prod
+  username:
+  password:
